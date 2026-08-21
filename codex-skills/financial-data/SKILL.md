@@ -1,6 +1,6 @@
 ---
 name: financial-data
-description: "AI Berkshire skill: 财务数据获取与交叉验证规范. Source: skills/financial-data.md."
+description: 财务数据获取与交叉验证规范：美股/港股/A股/台股各自的数据源优先级、抓取方式与双源校验流程。在引用任何企业财务数据（营收、利润、现金流、市值、股本、PE/ROE 等）之前先读本规范——每个关键数据必须来自两个独立来源，误差>1% 须标记，市值必须用「股价 × 总股本」手算校验。台股数据走 tools/twstock_data.py。
 ---
 
 ## Codex adapter note
