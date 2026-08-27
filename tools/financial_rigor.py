@@ -198,7 +198,9 @@ def cross_validate(field_name, source_values: dict, unit="", tolerance_pct=2.0):
 
     all_ok = True
     for src, val in values.items():
-        dev = abs(float(val) - median) / median * 100 if median != 0 else 0
+        # 分母取绝对值：负值字段（经营现金流净流出、净亏损等）若直接除以负中位数，
+        # 偏差会算成负数，导致 dev <= tolerance 恒成立、超标来源被误判为「一致」。
+        dev = abs(float(val) - median) / abs(median) * 100 if median != 0 else 0
         status = "✅" if dev <= tolerance_pct else "❌"
         if dev > tolerance_pct:
             all_ok = False
