@@ -111,10 +111,21 @@
 使用 Task 工具同时启动4个Agent（**必须在同一条消息中并行调用**）：
 
 每个Agent的配置：
-- `subagent_type`: `general-purpose`
+- `subagent_type`: **按下表逐个指定**（不要用 `general-purpose`）
 - `run_in_background`: `true`
 - `team_name`: 对应团队名
-- `name`: 对应角色名（business-analyst / financial-analyst / industry-researcher / risk-assessor）
+- `name`: 与 `subagent_type` 同名
+
+| 任务 | `subagent_type` / `name` | 视角 | 模型 |
+|------|--------------------------|------|------|
+| 任务1 商业模式 | `business-analyst` | 段永平 | opus |
+| 任务2 财务估值 | `financial-analyst` | 巴菲特 | opus |
+| 任务3 行业竞争 | `industry-researcher` | 芒格 | opus |
+| 任务4 风险管理层 | `risk-assessor` | 李录 | opus |
+
+这 4 个 Agent 的人设、纪律与模型档位定义在 `.claude/agents/*.md`，**模型由定义文件的 `model:` 字段决定，调用时不要覆盖**。
+
+**可选 · 取数分流**：若某个 Agent 需要批量机械取数（多年财务数据、多家同业对比），可再派发 `subagent_type: data-fetcher`（haiku 档）专门取数，取回后交由分析 Agent 解读。取数员只取数不下判断，详见 `.claude/agents/data-fetcher.md`。
 
 每个Agent的prompt模板：
 

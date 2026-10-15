@@ -56,6 +56,19 @@
 
 使用 Agent 工具在**同一条消息**中启动4个后台 Agent。
 
+**`subagent_type` 按下表逐个指定**（不要用 `general-purpose`）：
+
+| Agent | `subagent_type` | 视角 | 模型 |
+|-------|-----------------|------|------|
+| Agent 1 生意本质 | `business-analyst` | 段永平 | opus |
+| Agent 2 财务质量 | `financial-analyst` | 巴菲特 | opus |
+| Agent 3 竞争格局 | `industry-researcher` | 芒格 | opus |
+| Agent 4 风险信号 | `risk-assessor` | 李录 | opus |
+
+人设、纪律与模型档位定义在 `.claude/agents/*.md`，**模型由定义文件的 `model:` 字段决定，调用时不要覆盖**。下面各 Agent 的分析内容作为**任务描述**传给对应 Agent。
+
+**可选 · 取数分流**：财报原始数据的批量提取与两源交叉验证，可先派发 `subagent_type: data-fetcher`（haiku 档）完成，再把结果交给 Agent 2 解读。
+
 ---
 
 #### Agent 1：生意本质解读（段永平视角）
@@ -287,6 +300,13 @@
 ## 阶段三：编辑润色 + 读者评审
 
 研究报告完成后，**并行**启动两个 Agent：
+
+| Agent | `subagent_type` | 模型 |
+|-------|-----------------|------|
+| Agent 5 编辑 | `wechat-editor` | sonnet |
+| Agent 6 读者评审 | `reader-reviewer` | sonnet |
+
+人设与纪律定义在 `.claude/agents/*.md`。这两个 Agent **不做新研究、不改变任何结论**——编辑只改表达，评审只提意见。
 
 ### Agent 5：编辑（公众号文章改写）
 
