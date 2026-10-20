@@ -16,47 +16,61 @@ assets/          — 图片等静态资源
 
 ## 报告目录结构
 
-所有报告按**公司名**建文件夹，公司相关的所有报告放在对应文件夹内：
+`reports/` 一级目录按**市场 / 主题**分组，公司报告放在对应市场目录下的公司文件夹内：
 
 ```
 reports/
-├── AI产业研究/              — AI产业链全景研究（置顶）
-│   ├── AI五层蛋糕-产业全景研究-20260605.md
-│   └── AI五层蛋糕-公众号-20260605.md
-├── 腾讯/                    — 腾讯所有研究报告
-│   ├── 腾讯-research-20260408.md
-│   ├── 腾讯-earnings-2025Q4.md
-│   ├── 腾讯-management-20260409.md
-│   └── 腾讯-thesis.md
-├── 拼多多/                  — 拼多多所有研究报告
-├── 泡泡玛特/                — 泡泡玛特所有研究报告
-├── 核电-industry-20260409.md — 行业报告放根目录
-├── AI算力-funnel-20260509.md  — 漏斗筛选报告放根目录
-├── AI-轮动判断-20260509.md    — 主题级综合判断报告放根目录
-├── portfolio-latest.md       — 组合报告放根目录
-└── 多公司对比-checklist-20260408.md — 多公司报告放根目录
+├── README.md                — 报告总索引（新增报告后更新）
+├── portfolio-latest.md      — 组合报告（gitignore，只存本地）
+├── 美股/                    — 美股及 ADR 上市公司（含 QQQM 等 ETF）
+│   ├── 拼多多/
+│   │   ├── README.md
+│   │   ├── team-20260825/   — 一轮四大师团队报告（4 视角 + 最终报告）
+│   │   └── 拼多多-earnings-2026Q2.md
+│   └── 微软/ …
+├── 港股/                    — 港股上市公司（A+H 公司也放这里，如平安集团、中国移动）
+│   ├── 腾讯/
+│   └── 海底捞/
+│       ├── 01~04-四大师视角.md + 最终报告.md
+│       ├── 海底捞-earnings-2026H1.md
+│       ├── 海底捞-news-20261013.md
+│       └── 海底捞-thesis.md
+├── A股/                     — 仅 A 股上市公司（当前为空，需要时创建）
+├── 其他市场/                — 新加坡等其他交易所（如 新加坡航空/）
+├── 行业与主题/              — 行业研究、漏斗筛选、主题判断
+│   ├── AI产业研究/          — AI 五层蛋糕、AI 算力/模型/应用 funnel 等
+│   └── 港股收息-funnel-20261014.md
+├── 组合与对比/              — 持仓横向对比、多公司对比
+├── 筛选池/                  — 港股/美股/科创板召回池、晨星低估筛选、bottleneck-map
+└── 大师与方法论/            — 段永平/李录/散户乙/达利欧资料、13F 追踪、凯利公式等
 ```
+
+实盘持仓与操作记录在仓库根目录 `实盘记录/`（公开权重口径，不含股数与金额；原始账本在 `local/`，不入库）。
+
+**公司归属市场的判断**：按主上市地；美股 ADR（如拼多多 PDD）归美股；A+H 归港股。下文表格中 `{市场}` 即 `美股|港股|A股|其他市场` 之一。
 
 ## 报告命名规范
 
 | Skill | 文件命名格式 | 示例 |
 |------|---------|------|
-| /investment-team | `{公司名}/` 目录内含4个视角+最终报告 | `reports/拼多多/最终报告.md` |
-| /investment-research | `{公司名}-research-{YYYYMMDD}.md` | `reports/腾讯/腾讯-research-20260408.md` |
-| /investment-checklist | `{公司名}-checklist-{YYYYMMDD}.md` | `reports/腾讯/腾讯-checklist-20260408.md` |
-| /industry-research | `{行业名}-industry-{YYYYMMDD}.md`（根目录） | `reports/核电-industry-20260409.md` |
-| /industry-funnel | `{行业名}-funnel-{YYYYMMDD}.md`（根目录） | `reports/AI算力-funnel-20260509.md` |
-| /private-company-research | `{公司名}-private-{YYYYMMDD}.md` | `reports/字节跳动/字节跳动-private-20260408.md` |
-| /earnings-review | `{公司名}-earnings-{期间}.md` | `reports/腾讯/腾讯-earnings-2025Q4.md` |
-| /earnings-team | `{公司名}/` 目录内含4个大师视角+研究底稿+公众号文章+读者评审 | `reports/腾讯/腾讯-earnings-2025Q4.md`（公众号定稿） |
-| /thesis-tracker | `{公司名}-thesis.md`（长期维护） | `reports/腾讯/腾讯-thesis.md` |
-| /portfolio-review | `portfolio-latest.md`（根目录，持续更新） | `reports/portfolio-latest.md` |
-| /management-deep-dive | `{公司名}-management-{YYYYMMDD}.md` | `reports/腾讯/腾讯-management-20260409.md` |
+| /investment-team | `{市场}/{公司名}/team-{YYYYMMDD}/` 内含4个视角+最终报告 | `reports/美股/拼多多/team-20260825/最终报告.md` |
+| /investment-research | `{市场}/{公司名}/{公司名}-research-{YYYYMMDD}.md` | `reports/美股/QQQM/QQQM-research-20260831.md` |
+| /investment-checklist | `{市场}/{公司名}/{公司名}-checklist-{YYYYMMDD}.md` | `reports/港股/腾讯/腾讯-checklist-20260408.md` |
+| /industry-research | `行业与主题/{行业名}-industry-{YYYYMMDD}.md` | `reports/行业与主题/核电-industry-20260409.md` |
+| /industry-funnel | `行业与主题/{行业名}-funnel-{YYYYMMDD}.md` | `reports/行业与主题/港股收息-funnel-20261014.md` |
+| /private-company-research | `{市场}/{公司名}/{公司名}-private-{YYYYMMDD}.md`（未上市放 `其他市场/`） | `reports/其他市场/字节跳动/字节跳动-private-20260408.md` |
+| /earnings-review | `{市场}/{公司名}/{公司名}-earnings-{期间}.md` | `reports/港股/海底捞/海底捞-earnings-2026H1.md` |
+| /earnings-team | `{市场}/{公司名}/` 内含4个大师视角+研究底稿+公众号文章+读者评审 | `reports/美股/Broadcom/Broadcom-earnings-FY2026Q3.md`（公众号定稿） |
+| /news-pulse | `{市场}/{公司名}/{公司名}-news-{YYYYMMDD}.md` | `reports/港股/老铺黄金/老铺黄金-news-20261014.md` |
+| /thesis-tracker | `{市场}/{公司名}/{公司名}-thesis.md`（长期维护） | `reports/港股/海底捞/海底捞-thesis.md` |
+| /portfolio-review | `portfolio-latest.md`（根目录，gitignore，持续更新） | `reports/portfolio-latest.md` |
+| /management-deep-dive | `{市场}/{公司名}/{公司名}-management-{YYYYMMDD}.md` | `reports/港股/海底捞/海底捞-management-20260909.md` |
+| 多公司对比 | `组合与对比/多公司对比-{主题}-{YYYYMMDD}.md` | `reports/组合与对比/多公司对比-微软vsMeta-20261014.md` |
 
 ## /investment-team 文件结构
 
 ```
-reports/{公司名}/
+reports/{市场}/{公司名}/
 ├── README.md                         — 研究框架概览+核心结论
 ├── 01-商业模式分析-段永平视角.md
 ├── 02-财务估值分析-巴菲特视角.md
@@ -64,6 +78,8 @@ reports/{公司名}/
 ├── 04-风险管理层评估-李录视角.md
 └── 最终报告.md                       — Team Lead 综合报告
 ```
+
+同一公司做第二轮及以后，放入 `team-{YYYYMMDD}/` 子目录（同一公司多轮的约定），并更新公司 README.md 的指针。
 
 ## 投研分析核心原则（最高优先级）
 
@@ -113,7 +129,7 @@ reports/{公司名}/
 ```bash
 # 推送报告到GitHub
 cd ~/ai-berkshire
-git add reports/xxx.md
+git add reports/{市场}/{公司名}/xxx.md
 git commit -m "添加xxx报告"
 git pull --rebase origin main
 git push origin main
