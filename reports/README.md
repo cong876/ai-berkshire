@@ -1,5 +1,6 @@
 # 报告索引
 
+- [多公司对比-Meta换Google-20261020](组合与对比/多公司对比-Meta换Google-20261020.md) — 清仓 Meta 转买 Alphabet 的换仓判断（Q3 财报前）
 - **Anthropic** — [README](其他市场/Anthropic/README.md) · [最终报告](其他市场/Anthropic/最终报告.md)（S-1 公开版四大师团队研究，2026-10-27） · [段永平](其他市场/Anthropic/01-商业模式分析-段永平视角.md) · [巴菲特](其他市场/Anthropic/02-财务估值分析-巴菲特视角.md) · [芒格](其他市场/Anthropic/03-行业竞争分析-芒格视角.md) · [李录](其他市场/Anthropic/04-风险管理层评估-李录视角.md)
 > 按市场 / 主题分组。公司目录内：`README.md` 为该公司研究概览；`team-{日期}/` 为一轮四大师团队报告（4 视角 + 最终报告）；`*-earnings-*` 财报精读；`*-news-*` 新闻脉搏；`*-thesis.md` 投资论文；`《看懂X》/` 为上游作者的深度系列。
 > 实盘持仓见仓库根目录 [实盘记录/](../实盘记录/)。组合报告 `portfolio-latest.md` 只存本地（gitignore）。
