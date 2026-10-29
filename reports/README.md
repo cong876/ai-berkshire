@@ -10,7 +10,7 @@
 - **Google** — [README](美股/Google/README.md) · [最终报告](美股/Google/最终报告.md) · [Google-Alphabet投资研究报告-20260623](美股/Google/Google-Alphabet投资研究报告-20260623.md) · [Q3 2026 财报精读](美股/Google/Google-earnings-2026Q3.md)（10/29：低于预期、论文削弱未破裂，评分 3.5→3.25，加仓线下移至 $250–265） · [thesis](美股/Google/Google-thesis.md)（J1–J18 判断清单、积压 vs 采购承诺追踪表）
 - **HPE** — [team-20260903](美股/HPE/team-20260903/)
 - **Interactive Brokers** — [README](美股/Interactive%20Brokers/README.md) · [team-20260821](美股/Interactive%20Brokers/team-20260821/) · [Interactive Brokers-news-20260828](美股/Interactive%20Brokers/Interactive%20Brokers-news-20260828.md) · [Interactive Brokers-news-20260902](美股/Interactive%20Brokers/Interactive%20Brokers-news-20260902.md)
-- **Meta** — [README](美股/Meta/README.md) · [最终报告](美股/Meta/最终报告.md) · [team-20260821](美股/Meta/team-20260821/) · [team-20261014](美股/Meta/team-20261014/) · [《看懂Meta》](美股/Meta/《看懂Meta》/)
+- **Meta** — [README](美股/Meta/README.md) · [最终报告](美股/Meta/最终报告.md) · [team-20260821](美股/Meta/team-20260821/) · [team-20261014](美股/Meta/team-20261014/) · [Q3 2026 财报前瞻](美股/Meta/Meta-earnings-preview-2026Q3.md) · [Q3 2026 财报精读](美股/Meta/Meta-earnings-2026Q3.md) · [《看懂Meta》](美股/Meta/《看懂Meta》/)
 - **Progressive** — [README](美股/Progressive/README.md) · [最终报告](美股/Progressive/最终报告.md) · [team-20261015](美股/Progressive/team-20261015/) · [《看懂前进保险》](美股/Progressive/《看懂前进保险》/)
 - **QQQM** — [QQQM-research-20260831](美股/QQQM/QQQM-research-20260831.md)
 - **微软** — [README](美股/微软/README.md) · [最终报告](美股/微软/最终报告.md) · [team-20261014](美股/微软/team-20261014/) · [微软-research-20260623](美股/微软/微软-research-20260623.md)
