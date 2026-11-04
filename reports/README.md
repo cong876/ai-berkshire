@@ -5,8 +5,9 @@
 
 ## 美股
 
+- **Bloom Energy** — [README](美股/Bloom%20Energy/README.md) · [最终报告](美股/Bloom%20Energy/最终报告.md)（2026-11-04 四大师精简轮，综合 2.5/5：不开仓进候选池，≤$140 附条件 / ≤$110 无条件试探仓）
 - **Broadcom** — [Broadcom-earnings-FY2026Q3](美股/Broadcom/Broadcom-earnings-FY2026Q3.md)
-- **CEG** — [README](美股/CEG/README.md) · [team-20260821](美股/CEG/team-20260821/) · [team-20260921](美股/CEG/team-20260921/)
+- **CEG** — [README](美股/CEG/README.md) · [team-20260821](美股/CEG/team-20260821/) · [team-20260921](美股/CEG/team-20260921/) · [CEG-news-20261104](美股/CEG/CEG-news-20261104.md)（中期选举后德州数据中心暂停预期致 −6.4%，加仓信号 0/5、减仓 0 新触发，不加不减；预写 11/9 后触发）
 - **Google** — [README](美股/Google/README.md) · [最终报告](美股/Google/最终报告.md) · [Google-Alphabet投资研究报告-20260623](美股/Google/Google-Alphabet投资研究报告-20260623.md) · [Q3 2026 财报精读](美股/Google/Google-earnings-2026Q3.md)（10/29：低于预期、论文削弱未破裂，评分 3.5→3.25，加仓线下移至 $250–265） · [thesis](美股/Google/Google-thesis.md)（J1–J18 判断清单、积压 vs 采购承诺追踪表；11/3 10-Q 核对：J3/J16 成立、点击/CPC 双正、ATM 加仓条件不满足）
 - **HPE** — [team-20260903](美股/HPE/team-20260903/)
 - **Interactive Brokers** — [README](美股/Interactive%20Brokers/README.md) · [team-20260821](美股/Interactive%20Brokers/team-20260821/) · [Interactive Brokers-news-20260828](美股/Interactive%20Brokers/Interactive%20Brokers-news-20260828.md) · [Interactive Brokers-news-20260902](美股/Interactive%20Brokers/Interactive%20Brokers-news-20260902.md) · [vs Robinhood 对比-20261030](组合与对比/多公司对比-Robinhood-vs-IBKR-20261030.md)
@@ -50,6 +51,7 @@
 - [中国大模型六强横向研究-20260721/](行业与主题/中国大模型六强横向研究-20260721/)（8 个文件）
 - [大模型技术/](行业与主题/大模型技术/)（6 个文件）
 - [黄金/黄金-现状与组合角色-20261030](行业与主题/黄金/黄金-现状与组合角色-20261030.md) — 金价从高点 −26% 的驱动（实际利率、仓位、央行购金放缓）；黄金不对冲纳指但对冲信用/法币风险；角色定义为 ≤5% 保险仓 + 老铺 β 替代，规则 G1–G7（附两份资料包）
+- [数据中心电力-中期选举后形势评估-20261104](行业与主题/数据中心电力-中期选举后形势评估-20261104.md) — 民主党横扫 + 德州 Hinojosa 当选对电厂股的传导：电网侧发电商 beta 负、表后现场发电相对赢家、核电新建两党共识；三情景（条件式暂停 50% / 德州全面暂停 25% / 审计后恢复 25%）；CEG 与 BE 共用底稿
 - [AI医疗-funnel-20261021](行业与主题/AI医疗-funnel-20261021.md) — 美股 AI 医疗 35 家候选 → 3 家（ISRG / WAY / DOCS）+ 4 家观察池
 - [港股收息-funnel-20261014](行业与主题/港股收息-funnel-20261014.md)
 
