@@ -33,6 +33,8 @@ assets/公司品牌图/
 
 # 组合报告只存本地，不公开
 reports/portfolio-latest.md
+# 每日美股港股复盘含净值与金额，不入库（历史文件已挪到 local/复盘/）
+reports/组合与对比/美股港股复盘-*.md
 
 # 实盘记录/ 公开权重口径版；原始账本（含股数/金额）在 local/实盘记录-原始/（已被 /local/ 规则覆盖）
 .claude/settings.local.json
