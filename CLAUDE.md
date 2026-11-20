@@ -60,7 +60,7 @@ reports/
 | /industry-funnel | `行业与主题/{行业名}-funnel-{YYYYMMDD}.md` | `reports/行业与主题/港股收息-funnel-20261014.md` |
 | /private-company-research | `{市场}/{公司名}/{公司名}-private-{YYYYMMDD}.md`（未上市放 `其他市场/`） | `reports/其他市场/字节跳动/字节跳动-private-20260408.md` |
 | /earnings-review | `{市场}/{公司名}/{公司名}-earnings-{期间}.md` | `reports/港股/海底捞/海底捞-earnings-2026H1.md` |
-| /earnings-team | `{市场}/{公司名}/` 内含4个大师视角+研究底稿+公众号文章+读者评审 | `reports/美股/Broadcom/Broadcom-earnings-FY2026Q3.md`（公众号定稿） |
+| /earnings-team | `{市场}/{公司名}/` 内含4个大师视角 + `{公司名}-earnings-{期间}.md`（合成研究报告）；不产出公众号文章与读者评审 | `reports/美股/拼多多/拼多多-earnings-2026Q3.md` |
 | /news-pulse | `{市场}/{公司名}/{公司名}-news-{YYYYMMDD}.md` | `reports/港股/老铺黄金/老铺黄金-news-20261014.md` |
 | /thesis-tracker | `{市场}/{公司名}/{公司名}-thesis.md`（长期维护） | `reports/港股/海底捞/海底捞-thesis.md` |
 | /portfolio-review | `portfolio-latest.md`（根目录，gitignore，持续更新） | `reports/portfolio-latest.md` |

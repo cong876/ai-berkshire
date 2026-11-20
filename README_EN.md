@@ -179,7 +179,7 @@ Ask AI directly, and you have one context window. Four parallel Agents means 4×
 | Skill | Purpose | When to Use |
 |-------|---------|-------------|
 | [`/earnings-review`](skills/earnings-review.md) | Earnings deep read (primary sources) | Read raw filings only — no sell-side reports — like Buffett reads annual reports |
-| [`/earnings-team`](skills/earnings-team.md) | Earnings team + publishable article | Four masters interpret earnings in parallel → editor polish → reader review → publish-ready |
+| [`/earnings-team`](skills/earnings-team.md) | Earnings team | Four masters interpret earnings in parallel → Team Lead synthesis report |
 
 ### 🏭 Industry Screening
 

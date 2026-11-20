@@ -189,7 +189,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
 | [`/earnings-review`](skills/earnings-review.md) | 财报精读（一手资料） | 只读原始财报，不依赖二手研报，像巴菲特一样读年报 |
-| [`/earnings-team`](skills/earnings-team.md) | 财报精读团队 + 公众号发布 | 四大师并行解读财报 → 编辑润色 → 读者评审 → 可发布文章 |
+| [`/earnings-team`](skills/earnings-team.md) | 财报精读团队 | 四大师并行解读财报 → Team Lead 合成研究报告 |
 
 ### 🏭 行业筛选类
 
